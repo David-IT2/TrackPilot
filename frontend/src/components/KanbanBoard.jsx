@@ -21,7 +21,7 @@ export default function KanbanBoard() {
     }
   }
 
-  if (isLoading) return <p className="p-6 text-sm text-slate-400">Loading applications…</p>
+  if (isLoading) return <p className="p-6 text-sm text-brand-text/70">Loading applications…</p>
   if (isError) return <p className="p-6 text-sm text-rose-500">Couldn't load applications.</p>
 
   return (

@@ -27,16 +27,16 @@ export default function ApplicationCard({ application, onClick }) {
       {...listeners}
       {...attributes}
       onClick={() => onClick(application)}
-      className="cursor-grab rounded-lg border border-slate-200 bg-white p-3 shadow-sm hover:border-slate-300 active:cursor-grabbing"
+      className="cursor-grab rounded-lg border border-brand-text/20 bg-brand-plum/80 p-3 shadow-sm hover:border-brand-amber/70 active:cursor-grabbing"
     >
-      <p className="text-sm font-medium text-slate-900">{application.company}</p>
-      <p className="mt-0.5 text-sm text-slate-500">{application.role}</p>
+      <p className="text-sm font-medium text-brand-text">{application.company}</p>
+      <p className="mt-0.5 text-sm text-brand-text/70">{application.role}</p>
       <div className="mt-2 flex items-center justify-between">
         {daysSinceApplied !== null && (
-          <span className="text-xs text-slate-400">{daysSinceApplied}d since applied</span>
+          <span className="text-xs text-brand-text/60">{daysSinceApplied}d since applied</span>
         )}
         {nextEvent && (
-          <span className="rounded-full bg-accent-50 px-2 py-0.5 text-xs font-medium text-accent-700">
+          <span className="rounded-full bg-brand-amber px-2 py-0.5 text-xs font-medium text-brand-plum">
             {eventLabel(nextEvent)}
           </span>
         )}
