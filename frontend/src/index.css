@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-50 text-slate-900;
+  @apply bg-brand-plum text-brand-text;
+  background:
+    radial-gradient(circle at top left, rgb(255 182 0 / 0.9), transparent 38rem),
+    linear-gradient(135deg, #ffb600 0%, #2e0022 48%, #2e0022 100%);
+  min-height: 100vh;
 }

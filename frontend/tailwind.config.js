@@ -4,12 +4,18 @@ export default {
   theme: {
     extend: {
       colors: {
+        brand: {
+          amber: '#ffb600',
+          plum: '#2e0022',
+          text: '#fbffe7',
+        },
         accent: {
-          50: '#eef2ff',
-          100: '#e0e7ff',
-          500: '#4f46e5',
-          600: '#4338ca',
-          700: '#3730a3',
+          50: '#fff4cc',
+          100: '#ffe899',
+          300: '#ffd34d',
+          500: '#ffb600',
+          600: '#d99b00',
+          700: '#8f6600',
         },
       },
     },
