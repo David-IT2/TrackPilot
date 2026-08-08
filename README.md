@@ -38,12 +38,6 @@ React dashboard (kanban + calendar + inbox feed)
 **Frontend** — React, Vite, Tailwind CSS, TanStack Query, dnd-kit
 **AI** — locally-hosted LLM (Llama 3.1) for classification and structured extraction, with schema validation and automatic retry on malformed output
 
-## Engineering decisions worth noting
-
-- **Local AI over a hosted API** — no per-request cost, no data ever leaving the machine, a real constraint that shaped the entire pipeline design
-- **Incremental sync, not full re-scans** — uses a cursor-based approach so repeated syncs are cheap, with a clean fallback to full resync if the cursor expires
-- **Validated AI output, not trusted blindly** — every model response is parsed against a strict schema; a bad or malformed response is retried once, then gracefully degrades instead of crashing the pipeline
-- **Optimistic UI, not spinner-driven** — status changes update instantly client-side and roll back on failure, via TanStack Query's mutation lifecycle
 
 ## Setup
 
